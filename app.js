@@ -52,7 +52,9 @@ goOnBtn.addEventListener(`click`, function (e) {
 			}
 		}
 	}
-	gameOtoEnd();
+	if (gameStarted) {
+		gameOtoEnd();
+	}
 });
 
 stopBtn.addEventListener(`click`, function () {
@@ -135,6 +137,7 @@ function gameOtoEnd() {
 		}
 	}
 }
+
 function gameManualEnd() {
 	meValueFront += ` = ${meValueBack}`;
 	gameEnd = true;
