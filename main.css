@@ -1,0 +1,186 @@
+@import url("https://fonts.cdnfonts.com/css/google-sans");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Product Sans", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.pink {
+	color: #f8aab7;
+}
+.title {
+	font-size: 2.5rem;
+	letter-spacing: 0.2rem;
+	/* margin-top: 7rem; */
+}
+.players {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* margin-top: 3rem; */
+}
+.dealer {
+	margin-bottom: 3rem;
+}
+.me {
+	margin-bottom: 3rem;
+}
+.dealer-text {
+	font-weight: 900;
+}
+.me-text {
+	font-weight: 900;
+}
+.player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.amount {
+	background: none;
+	border: none;
+	border: 1px solid #222;
+	border-radius: 10px;
+	padding: 0 0.25rem;
+	margin-bottom: 0.75rem;
+}
+.amount-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.enter-value {
+	margin-bottom: 0.75rem;
+	color: rgb(204, 70, 70);
+	font-weight: 900;
+}
+.amount:focus {
+	outline: none;
+}
+.continue {
+	margin-bottom: 1rem;
+	background: none;
+	border: none;
+	border: 1px solid #222;
+	border-radius: 10px;
+	font-family: "Product Sans";
+	padding: 0.25rem 0.35rem;
+	font-size: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.continue:hover {
+	background: #222;
+	color: #fff;
+}
+.stop {
+	margin-bottom: 1rem;
+	background: none;
+	border: none;
+	border: 1px solid #222;
+	border-radius: 10px;
+	font-family: "Product Sans";
+	padding: 0.25rem 0.35rem;
+	font-size: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.stop:hover {
+	background: #222;
+	color: #fff;
+}
+.btns-amount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-screen {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 1000ms;
+}
+.enough {
+	overflow: hidden;
+}
+.show-main-screen {
+	grid-template-rows: 1fr;
+}
+.play {
+	margin-top: 1rem;
+	background: none;
+	border: none;
+	border: 1px solid #222;
+	border-radius: 10px;
+	font-family: "Product Sans";
+	padding: 0.25rem 0.35rem;
+	font-size: 1.25rem;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	letter-spacing: 0.1rem;
+}
+.play:hover {
+	background: #222;
+	color: #fff;
+}
+.none {
+	display: none;
+}
+.scores {
+	max-width: 15rem;
+}
+.play-again {
+	margin-top: 1rem;
+	background: none;
+	border: none;
+	border: 1px solid #222;
+	border-radius: 10px;
+	font-family: "Product Sans";
+	padding: 0.25rem 0.35rem;
+	font-size: 1.25rem;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	letter-spacing: 0.1rem;
+}
+.play-again:hover {
+	background: #222;
+	color: #fff;
+}
+.won {
+	color: rgb(30, 189, 30);
+}
+.lost {
+	color: rgb(204, 70, 70);
+}
+.draw {
+	color: #555;
+}
+.game-result {
+	margin-top: 2rem;
+}
+.noneO {
+	opacity: 0;
+	/* display: none; */
+}
+@media screen and (min-width: 700px) {
+	.players {
+		flex-direction: row;
+		margin-top: 1rem;
+	}
+	.dealer {
+		margin-right: 20rem;
+	}
+	h3 {
+		margin-top: 2rem;
+	}
+}
